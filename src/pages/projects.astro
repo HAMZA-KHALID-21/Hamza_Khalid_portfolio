@@ -3,49 +3,80 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">My Projects</div>
   </div>
 
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Electric Vehicle Charging Station Occupancy Prediction"
+    img="/fyp_image.png"
+    desc="Final Year Project using Hybrid LSTM Neural Networks to predict occupancy of EV charging stations for efficient resource management."
     url="#"
+    badge="FYP"
   />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
-  </div>
+  <div class="divider my-0"></div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Line Following Fire Rescue Robot"
+    img="/LFR_image.jpeg"
+    desc="Designed and implemented an intelligent line-following robot for fire rescue missions. Uses IR sensors, flame detection, and AVR microcontroller."
     url="#"
-    badge="FOSS"
+    badge="Hardware"
   />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="DC Motor Control – PID Controller Design"
+    img="/DC_motor_image.png"
+    desc="DC motor speed control using Buck and Boost converters for armature and field control. Implemented PI controllers in Simulink."
     url="#"
+    badge="Simulation"
   />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Food Ordering System – Cheezious"
+    img="/cheezious_image.png"
+    desc="A web-based food ordering system designed to streamline the process for both customers and restaurant staff."
     url="#"
+    badge="UI/UX"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="ONDC-like Protocol Platform"
+    img="/ondc_image.jpg"
+    desc="Internship project at NASTP to replicate Open Network for Digital Commerce architecture with modular backend protocols."
+    url="#"
+    badge="Internship"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="DSP Sampling and Aliasing Analyzer"
+    img="/dsp_image.jpg"
+    desc="DSP lab simulation in MATLAB/Simulink to demonstrate aliasing, impulse sampling, frequency domain convolution, and multirate processing."
+    url="#"
+    badge="DSP"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Proximity Sensor Design"
+    img="/proximity_sensor.webp"
+    desc="Designed a proximity sensor module to detect obstacles using infrared and ultrasonic sensing methods. Useful for automation systems and robotics."
+    url="#"
+    badge="Hardware"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Medical Insurance Cost Prediction"
+    img="/insurance_prediction.jpg"
+    desc="Built a machine learning model using linear regression to predict insurance costs based on age, BMI, smoking status, and other parameters."
+    url="#"
+    badge="AI/ML"
   />
 </BaseLayout>

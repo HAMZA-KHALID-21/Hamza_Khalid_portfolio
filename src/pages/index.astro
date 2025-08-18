@@ -11,20 +11,20 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-xl py-1">Hey There! 👋</div>
+    <div class="text-5xl font-bold">I'm Hamza Khalid</div>
+    <div class="text-3xl py-3 font-bold">Electrical Engineer | Computer Engineering Major</div>
     <div class="py-2">
-      <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
-      </text>
-    </div>
+      <p class="text-lg">
+        I'm a passionate <b>Electrical Engineering student</b> at COMSATS University Islamabad, specializing in Computer Engineering. I enjoy working at the intersection of hardware and software — building intelligent systems, working on embedded projects, and designing AI-driven applications.
+        <br /><br />
+        This portfolio showcases my <b>projects, internships, blog posts</b>, and more. From robotics to AI to web apps, you’ll find a blend of my interests in engineering, programming, and innovation.
+      </p>
+    </div>  
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="https://www.linkedin.com/in/hamzakhalid208" target="_blank">Let's connect!</a>
+      <a href="mailto:hamzakhalid208@gmail.com" class="btn btn-outline ml-5">
+        Hire Me
       </a>
     </div>
   </div>
@@ -34,45 +34,46 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Electric Vehicle Charging Station Occupancy Prediction"
+    img="/fyp_image.png"
+    desc="A deep learning-based system using Hybrid LSTM Neural Networks to predict charging station usage. Built for my Final Year Project at COMSATS."
     url="#"
-    badge="NEW"
+    badge="FYP"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Line Following Fire Rescue Robot"
+    img="/LFR_image.jpeg"
+    desc="Designed and implemented an intelligent line-following robot for fire rescue missions. Uses IR sensors, flame detection, and AVR microcontroller."
     url="#"
+    badge="Hardware"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="DC Motor Control - PID Controller degign "
+    img="/DC_motor_image.png"
+    desc="Direct Current (DC) motors have been fundamental to various industrial and automation systems due to their simplicity, reliability,and excellent speed control characteristics."
     url="#"
-    badge="FOSS"
+    badge="Designing"
   />
-
+  
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
+  <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+</div>
 
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
-</BaseLayout>
+{
+  last_posts.map((post) => (
+    <>
+      <HorizontalCard
+        title={post.data.title}
+        img={post.data.heroImage}
+        desc={post.data.description}
+        url={"/blog/" + createSlug(post.data.title, post.slug)}
+        target="_self"
+        badge={post.data.badge}
+      />
+      <div class="divider my-0" />
+    </>
+  ))
+}
+
